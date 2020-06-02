@@ -1,3 +1,6 @@
+# Programming for Data Science Nanodegree Program - Second Project Submission 
+# Leonardo Viapiana, May 2020
+
 import time
 import pandas as pd
 import numpy as np
