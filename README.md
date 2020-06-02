@@ -1,4 +1,4 @@
-# Programming for Data Science with Python - Udacity Nanodegree
+# Programming for Data Science with Python
 
 ## Introduction
 
