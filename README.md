@@ -1,6 +1,6 @@
-# python-for-datascience-nanodegree
+# Programming for Data Science with Python - Udacity Nanodegree
 
-## Leonardo Viapiana - Python Project Introduction
+## Leonardo Viapiana - Project Introduction
 
 In this repository you'll find the code I wrote in Python (version 3.7.1) to explore data related to bike share systems for three major cities in the United States — Chicago, New York City, and Washington. 
 
