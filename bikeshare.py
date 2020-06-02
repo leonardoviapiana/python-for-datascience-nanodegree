@@ -14,8 +14,7 @@ DAYS = ['monday', 'tuesday', 'wednesday', 'friday', 'saturday',
 print('|-' + '-'*60 + '-|')
 username = input('Hey! My name is Leonardo, what\'s yours?\n>')
 print('\nNice to meet you, {}'.format(username.title() +
-        '! Let\'s explore some US bikeshare data together.'))    
-
+        '! Let\'s explore some US bikeshare data together.'))   
 
 def get_filters():
     """
@@ -65,7 +64,6 @@ def get_filters():
     print('|-' + '-'*60 + '-|')
     return city, month, day
 
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -93,7 +91,6 @@ def load_data(city, month, day):
         df = df.loc[df['day_of_week'] == day.title()]
     return df
 
-
 def time_stats(df):
     """Displays statistics on the most frequent times of travel.
     Args:
@@ -120,7 +117,6 @@ def time_stats(df):
 
     print("\n>>> I calculated this in %s seconds." % round((time.time() - start_time)), 4)
     print('\n|-' + '-'*60 + '-|')
-
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip.
@@ -150,7 +146,6 @@ def station_stats(df):
     print("\n>>> I calculated this in %s seconds." % round((time.time() - start_time)),2)
     print('\n|-' + '-'*60 + '-|')
 
-
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration.
     Args:
@@ -172,7 +167,6 @@ def trip_duration_stats(df):
 
     print("\n>>> I calculated this in %s seconds." % round((time.time() - start_time)),4)
     print('\n|-' + '-'*60 + '-|')
-
 
 def user_stats(df, city):
     """Displays statistics on bikeshare users.
@@ -210,7 +204,6 @@ def user_stats(df, city):
         print("\n>>> I calculated this in %s seconds." % round((time.time() - start_time)),4)
         print('\n|-' + '-'*60 + '-|')
 
-
 def display_raw_data(df):
     """Displays first 5 records of raw data if the user requests, incremented by 5 
        additional records at time
@@ -226,7 +219,6 @@ def display_raw_data(df):
             return
         next = next + 5
         print(df.iloc[next:next+5])
-
 
 def main():
     while True:
@@ -248,7 +240,6 @@ def main():
         restart = input('\nWould you like me to restart? (yes or no).\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__":
     main()
